@@ -20,16 +20,15 @@ class _SoftCoolState extends State<SoftCool> {
             child: Scaffold(
                 body: Column(
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 50.0),
               child: Container(
-                height: 40,
-                width: 20,
-                decoration: const BoxDecoration(
-                  color: Color(0xff141617),
-                ),
-                // width: ,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color(0xff141617),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    border: Border.all(color: Colors.white70)),
               ),
             )
           ],
