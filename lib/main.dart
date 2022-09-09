@@ -79,14 +79,32 @@ class _SoftCoolState extends State<SoftCool> {
                               Container(
                                 width: 140,
                                 decoration: BoxDecoration(
-                                    color: Color(0xff242424),
+                                    color: const Color(0xff242424),
                                     borderRadius: const BorderRadius.all(
                                         Radius.circular(15)),
                                     border: Border.all(color: Colors.white54)),
                               ),
                             ],
                           )),
-                    )
+                    ),
+                    const SizedBox(height: 60),
+                    Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Container(
+                            height: 100,
+                            child: Row(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Digital services to solve',
+                                  style: TextStyle(
+                                      fontSize: 80, color: Colors.white),
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                )
+                              ],
+                            ))),
                   ],
                 ))));
   }
