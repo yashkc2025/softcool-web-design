@@ -89,22 +89,66 @@ class _SoftCoolState extends State<SoftCool> {
                     ),
                     const SizedBox(height: 60),
                     Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        padding: const EdgeInsets.only(left: 60, right: 100),
                         child: Container(
-                            height: 100,
-                            child: Row(
-                              // mainAxisAlignment: MainAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  'Digital services to solve',
-                                  style: TextStyle(
-                                      fontSize: 80, color: Colors.white),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                )
-                              ],
-                            ))),
+                          // height: 100,
+                          child: Row(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'Digital services to solve',
+                                    style: TextStyle(
+                                        fontSize: 50,
+                                        color: Colors.white,
+                                        fontFamily: 'Konstanz',
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                  Text(
+                                    'business problems',
+                                    style: TextStyle(
+                                        fontSize: 50,
+                                        color: Colors.white,
+                                        fontFamily: 'Konstanz',
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                  Text(
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum tellus massa,',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontFamily: 'Konstanz',
+                                    ),
+                                  ),
+                                  Text(
+                                    'nec tincidunt lorem faucibus vitae. Sed non ultricies arcu, ac tincidunt velit',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontFamily: 'Konstanz',
+                                    ),
+                                  ),
+                                  Text(
+                                    ' Morbi viverra faucibus nulla. Nullam varius ornare',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontFamily: 'Konstanz',
+                                    ),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        )),
+                    SizedBox(
+                      height: 40,
+                    ),
                   ],
                 ))));
   }
